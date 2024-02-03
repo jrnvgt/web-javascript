@@ -1,8 +1,8 @@
-"use strict";
-
-function showHelloWorld() {
-  let element = document.querySelector('#hello-world');
-  element.textContent = "Hello, world!";
-}
+'use strict';
 
 showHelloWorld();
+
+function showHelloWorld() {
+  const element = document.querySelector('.box > p');
+  element.textContent = 'Hello, world!';
+}
