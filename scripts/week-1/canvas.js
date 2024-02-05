@@ -1,3 +1,5 @@
+'use strict';
+
 const canvas = document.getElementById('canvas');
 canvas.width = canvas.offsetWidth;
 canvas.height = canvas.offsetHeight;
