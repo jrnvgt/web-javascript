@@ -1,9 +1,9 @@
 #dropzones td {
-  width: 125px;
-  height: 125px;
+  width: 12.5vw;
+  height: 12.5vh;
 }
 
 .pokemon {
-  width: 100px;
-  height: 100px;
+  width: 10vh;
+  height: 10vh;
 }

@@ -45,13 +45,14 @@ function dragLeaveHandler(event) {
 function dropHandler(event) {
   event.preventDefault();
 
-  if (event.target.children.length !== 0) { return; }
+  if (event.target.tagName !== 'TD') { return; }
 
-  const data = event.dataTransfer.getData('text/plain');
-  const element = document.getElementById(data);
-
-  if (event.target.contains(element)) { return; }
-
-  event.target.appendChild(element);
   event.target.removeAttribute('class');
+
+  if (event.target.childElementCount !== 0) { return; }
+
+  const id = event.dataTransfer.getData('text/plain');
+  const element = document.getElementById(id);
+
+  event.target.append(element);
 }
