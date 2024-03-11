@@ -1,12 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <link rel="icon" href="images/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles/bulma.css">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles/bulma.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/week-2/calculator.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script defer src="scripts/script.js"></script>
+    <script defer src="../scripts/script.js"></script>
+    <script defer src="../scripts/week-2/calculator.js"></script>
     <title>JavaScript</title>
   </head>
 
@@ -16,7 +18,7 @@
 
         <div class="navbar-brand">
           <div class="navbar-item">
-            <img src="images/logo.png" alt="logo">
+            <img src="../images/logo.png" alt="logo">
             <span class="ml-2 has-text-weight-semibold is-unselectable">JavaScript</span>
           </div>
           <a id="navbar-burger" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
@@ -27,7 +29,9 @@
         </div>
 
         <div id="navbar-menu" class="navbar-menu">
-          <div class="navbar-start"></div>
+          <div class="navbar-start">
+            <a class="navbar-item" href="../index.html">Back</a>
+          </div>
           <div class="navbar-end"></div>
         </div>
 
@@ -40,31 +44,24 @@
 
           <div class="columns">
             <div class="column">
-              <h1 class="title">Assignments</h1>
-              <h2 class="subtitle">JavaScript</h2>
+              <h1 class="title">Calculator</h1>
+              <h2 class="subtitle">Assignment</h2>
             </div>
           </div>
 
           <div class="columns">
-            <div class="column">
+            <div class="column is-one-quarter">
               <div class="box">
-                <div class="block">
-                  <span class="tag is-info">Week 1</span>
-                </div>
-                <div class="buttons">
-                  <a class="button is-primary" href="week-1/hello-world.html">Hello, world!</a>
-                  <a class="button is-primary" href="week-1/drag-and-drop.html">Drag &amp; Drop</a>
-                  <a class="button is-primary" href="week-1/canvas.html">Canvas</a>
-                </div>
+                <form id="calculator" name="calculator"></form>
               </div>
             </div>
             <div class="column">
               <div class="box">
-                <div class="block">
-                  <span class="tag is-info">Week 2</span>
-                </div>
-                <div class="buttons">
-                  <a class="button is-primary" href="week-2/calculator.html">Calculator</a>
+                <div id="buttons" class="buttons">
+                  <button class="button is-primary" type="button">+</button>
+                  <button class="button is-primary" type="button">-</button>
+                  <button class="button is-primary" type="button">x</button>
+                  <button class="button is-primary" type="button">/</button>
                 </div>
               </div>
             </div>
