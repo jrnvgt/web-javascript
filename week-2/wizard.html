@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="../images/logo.png" type="image/png">
+    <link rel="stylesheet" href="../styles/bulma.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles//week-2/wizard.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="../scripts/script.js"></script>
+    <script defer src="../scripts/week-2/wizard.js"></script>
+    <title>JavaScript</title>
+  </head>
+
+  <body>
+    <nav class="navbar is-light" aria-label="navigation">
+      <div class="container">
+
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <img src="../images/logo.png" alt="logo">
+            <span class="ml-2 has-text-weight-semibold is-unselectable">JavaScript</span>
+          </div>
+          <a id="navbar-burger" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+
+        <div id="navbar-menu" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item" href="../index.html">Back</a>
+          </div>
+          <div class="navbar-end"></div>
+        </div>
+
+      </div>
+    </nav>
+
+    <main>
+      <section class="section">
+        <div class="container">
+
+          <div class="columns">
+            <div class="column">
+              <h1 class="title">Wizard</h1>
+              <h2 class="subtitle">Assignment</h2>
+            </div>
+          </div>
+
+          <div class="columns">
+            <div class="column">
+              <div class="box">
+                <h1 class="title is-size-4">Register</h1>
+                <form id="register" name="register">
+
+                  <div class="block register-step">
+                    <div class="field">
+                      <label class="label" for="first-name">First Name</label>
+                      <div class="control">
+                        <input class="input" id="first-name" name="first-name" type="text" autocomplete="given-name" placeholder="First name">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                    <div class="field">
+                      <label class="label" for="last-name">Last name</label>
+                      <div class="control">
+                        <input class="input" id="last-name" name="last-name" type="text" autocomplete="family-name" placeholder="Last name">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                  </div>
+
+                  <div class="block register-step" hidden>
+                    <div class="field">
+                      <label class="label" for="email">Email</label>
+                      <div class="control">
+                        <input class="input" id="email" name="email" type="email" autocomplete="email" placeholder="Email">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                    <div class="field">
+                      <label class="label" for="phone">Phone</label>
+                      <div class="control">
+                        <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="Phone">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                  </div>
+
+                  <div class="block register-step" hidden>
+                    <div class="field">
+                      <label class="label" for="username">Username</label>
+                      <div class="control">
+                        <input class="input" id="username" name="username" type="text" autocomplete="username" placeholder="Username">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                    <div class="field">
+                      <label class="label" for="password">Password</label>
+                      <div class="control">
+                        <input class="input" id="password" name="password" type="password" autocomplete="current-password" placeholder="Password">
+                      </div>
+                      <p class="help is-danger"></p>
+                    </div>
+                  </div>
+
+                  <nav class="pagination is-centered" aria-label="pagination">
+                    <a class="pagination-previous is-disabled" id="previous-button">Previous</a>
+                    <a class="pagination-next" id="next-button">Next</a>
+                    <ul class="pagination-list">
+                      <li>
+                        <a class="pagination-link is-current" aria-label="page 1">1</a>
+                      </li>
+                      <li>
+                        <a class="pagination-link" aria-label="page 2">2</a>
+                      </li>
+                      <li>
+                        <a class="pagination-link" aria-label="page 3">3</a>
+                      </li>
+                    </ul>
+                  </nav>
+
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+
+        <div class="content has-text-centered">
+          <p>&copy; 2024 Jeroen van Vugt</p>
+          <a href="https://bulma.io">
+            <img src="https://bulma.io/images/made-with-bulma.png" alt="Made with Bulma">
+          </a>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>
